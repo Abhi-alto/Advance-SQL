@@ -134,4 +134,4 @@ END;
 
 	EXECUTE uspFindProducts 
 		@min_list_price = 6000,
-		@name = 'Trek';
+		@name = 'Trek';.

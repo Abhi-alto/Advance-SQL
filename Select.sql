@@ -19,14 +19,8 @@ select city, COUNT (*) from sales.customers
 
 SELECT
     city,
-    COUNT (*)
-FROM
-    sales.customers
-WHERE
-    state = 'NY'
-GROUP BY
-    city
-HAVING
-    COUNT (*) > 20
-ORDER BY
-    city;
+    COUNT (*) FROM sales.customers
+	WHERE state = 'NY'
+	GROUP BY city
+	HAVING COUNT (*) > 20
+	ORDER BY city;
